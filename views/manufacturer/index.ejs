@@ -1,0 +1,38 @@
+<h3>All Manufacturers</h3>
+
+<table>
+    <tr>
+        <th width="120">Manufacturer Code</th>
+        <th width="120">Manufacturer Name</th>
+        <th width="290">Manufacturer Address</th>
+        <th width="120">Opening Balance</th>
+        <th width="150">BST CODE</th>   
+        
+        
+
+    </tr>
+    
+    <% _.each(manufacturer, function(manufacturer) { %>
+    <tr data-id="<%= manufacturer.mcode %>" data-model="manufacturer">
+    
+        <td height="50"><%= manufacturer.pcode %></td>
+        <td><%= manufacturer.mname %></td>
+        <td><%= manufacturer.maddress %></td>
+        <td><%= manufacturer.psalestax %></td>
+        <td><%= manufacturer.mopeningbalance %></td>
+        <td><%= manufacturer.mbstcode %></td>
+        <td width="70"><a type="button" class="btn btn-info" data-dismiss="modal" href="/products/show/<%= manufacturer.id %>">Show</a></td>
+        <td width="70"><a type="button" class="btn btn-warning" data-dismiss="modal" href="/products/edit/<%= manufacturer.pcode %>">Edit</a></td>
+        <td width="70"><a type="button" class="btn btn-danger" data-dismiss="modal" href="/products/destroy/<%= manufacturer.pcode%>">Delete</a></td>
+       
+        
+        
+    
+    </tr>
+    
+    <% }) %>
+    
+
+</table>
+
+

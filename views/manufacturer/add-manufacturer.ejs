@@ -1,26 +1,26 @@
     
-  <form class="form-inline" role="form" style="position:absolute; top:-60px; z-index:-1;" method="post" action="/addproducts">
+  <form class="form-inline" role="form" style="position:absolute; top:-60px; z-index:-1;" method="post" action="/addmanufacturer">
     
     <table border="0">
         <tr>
             <td height="100" width="350">
                  <div class="form-group">
                       <label for="pcode">Manufacturer Code:</label>
-                      <input type="text" class="form-control" name="pcode" placeholder="Enter Unique code">
+                      <input type="text" class="form-control" name="mcode" placeholder="Enter Unique code">
                  </div>
             </td>
             
             <td width="450">
                 <div class="form-group">
                       <label for="pname">Manufacturer Name:</label>
-                      <input type="text" class="form-control" name="pname" placeholder="Enter Manufacturer Name">
+                      <input type="text" class="form-control" name="mname" placeholder="Enter Manufacturer Name">
                 </div>
             </td>
             
             <td width="450">
             <div class="form-group">
                       <label for="pdiscount">Area Code:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="text" class="form-control" name="pdiscount" placeholder="Area Code">
+                      <input type="text" class="form-control" name="mareacode" placeholder="Area Code">
                 </div>      
             </td>
         </tr>    
@@ -32,14 +32,22 @@
             <td height="100" width="400">
                 <div class="form-group">
                       <label for="ppacking">Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <textarea rows="5" cols="45" type="text" class="form-control" name="ppacking" placeholder="Manufacurer Address"></textarea>
+                    <textarea rows="5" cols="45" type="text" class="form-control" name="maddress" placeholder="Manufacurer Address"></textarea>
                 </div>  
             </td>
             
             <td width="450">
             <div class="form-group">
                       <label for="pdiscount">Opening Balance:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input type="text" class="form-control" name="pdiscount" placeholder="Area Code">
+                      <input type="text" class="form-control" name="mopeningbalance" placeholder="Opening Balance">
+                </div>      
+            </td>
+            
+            
+            <td width="450">
+            <div class="form-group">
+                      <label for="pdiscount">BST Code:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="text" class="form-control" name="mbstcode" placeholder="CST Code">
                 </div>      
             </td>
             
