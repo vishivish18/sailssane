@@ -42,44 +42,18 @@ module.exports = {
     },
     
     
-   show: function (req, res, next){
-       
-    
-       products.find({ 'pcode': req.body.searchvalue }, function (err, docs) {
-        // docs is an array
-        if(err)
-        {
-            console.log("error");
-        }
-        else
-            console.log("No error");
-            res.json(docs);
-            
-            
-        
+     
+    show: function (req, res, next){
+        Products.findOne(req.param('id'), function foundUser (err, products){
+            if(err) return next (err);
+            if(!products) return next();
+            res.view({
+            products: products
+            });
         
         });
     },
     
-    
-//    products.find({ 'pcode': req.body.searchvalue }, function (err, docs) {
-//        // docs is an array
-//        if(err)
-//        {
-//            console.log("error");
-//        }
-//        else
-//            console.log("No error");
-//            res.json(docs);
-//            
-//            
-//        
-//        
-//    });
-//    
-//
-//    
-    
-   
+
 };
 
