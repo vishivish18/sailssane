@@ -1,0 +1,17 @@
+<form action="/products/update/<%= products.pcode %>" method="POST">
+<h1>You are editing the Product <%= product.pname %> </h1>
+    
+    <input value="<%= products.pcode %>" name="pcode" type="text" />
+    <input value="<%= products.pname %>" name="pname" type="text" />
+    <input value="<%= products.ppacking %>" name="ppacking" type="text" />
+    <input value="<%= products.psalestax %>" name="psalestax" type="text" />
+    <input value="<%= products.pdiscount %>" name="pdiscount" type="text" />
+    <input value="<%= products.pboxsize %>" name="pboxsize" type="text" />
+    <input value="<%= products.ppurchase %>" name="ppurchase" type="text" />
+    <input value="<%= products.pmrp %>" name="pmrp" type="text" />
+    
+    <input type="submit" value="Proceed" />
+    
+    
+
+</form>

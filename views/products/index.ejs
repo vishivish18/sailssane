@@ -1,0 +1,43 @@
+<h3>All Products</h3>
+
+<table>
+    <tr>
+        <th width="120">Product Code</th>
+        <th width="120">Product Name</th>
+        <th width="100">Packing</th>
+        <th width="120">Sales Tax as</th>
+        <th width="150">Purchase discount</th>   
+        <th>Box/Case Size</th>   
+        <th>Purchase As</th>   
+        <th>Maximum Retail Price</th>
+        
+        
+
+    </tr>
+    
+    <% _.each(products, function(products) { %>
+    <tr data-id="<%= products.pcode %>" data-model="products">
+    
+        <td height="50"><%= products.pcode %></td>
+        <td><%= products.pname %></td>
+        <td><%= products.ppacking %></td>
+        <td><%= products.psalestax %></td>
+        <td><%= products.pdiscount %></td>
+        <td><%= products.pboxsize %></td>
+        <td><%= products.ppurchase %></td>
+        <td><%= products.pmrp %></td>
+        <td width="70"><a type="button" class="btn btn-info" data-dismiss="modal" href="/products/show/<%= products.pcode %>">Show</a></td>
+        <td width="70"><a type="button" class="btn btn-warning" data-dismiss="modal" href="/products/edit/<%= products.pcode %>">Edit</a></td>
+        <td width="70"><a type="button" class="btn btn-danger" data-dismiss="modal" href="/products/destroy/<%= products.pcode%>">Delete</a></td>
+       
+        
+        
+    
+    </tr>
+    
+    <% }) %>
+    
+
+</table>
+
+
