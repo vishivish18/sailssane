@@ -6,9 +6,49 @@
 */
 
 module.exports = {
-
+ schema: true,
+  
   attributes: {
+        
+      scode: {
+            type: 'string',
+            required: true,
+           
+        },
+      
+        sname: {
+         type: 'string',
+             
+
+        },
+
+        sareacode: {
+         type: 'string'        
+        },
+
+        saddress: {
+         type: 'string'        
+        },
+
+        sopeningbalance: {
+         type: 'string'        
+        },
+
+        sbstcode: {
+         type: 'string'        
+        },
+
+        scstcode: {
+         type: 'string'        
+        }
+
+       
 
   }
 };
+
+
+
+
+
 
