@@ -6,9 +6,37 @@
 */
 
 module.exports = {
-
+ schema: true,
+  
   attributes: {
+        
+      ecode: {
+            type: 'string',
+            required: true,
+           
+        },
+      
+        ename: {
+         type: 'string',
+             
 
+        },
+
+        eareamanager: {
+         type: 'string'        
+        },
+
+        eaddress: {
+         type: 'string'        
+        },
+
+        emr: {
+         type: 'string'        
+        },
+
+        etransport: {
+         type: 'string'        
+        }
   }
 };
 

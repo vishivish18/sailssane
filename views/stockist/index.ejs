@@ -1,0 +1,37 @@
+<h3>All Stockists</h3>
+
+<table>
+    <tr>
+        <th width="200">Stockist Code</th>
+        <th width="200">Stockist Name</th>
+        <th width="290">Stockist Address</th>
+        <th width="200">Opening Balance</th>
+        <th width="150">BST CODE</th>   
+        
+        
+
+    </tr>
+    
+    <% _.each(Stockist, function(Stockist) { %>
+    <tr data-id="<%= Stockist.scode %>" data-model="Stockist">
+    
+        <td height="50"><%= Stockist.scode %></td>
+        <td><%= Stockist.sname %></td>
+        <td><%= Stockist.saddress %></td>
+        <td><%= Stockist.sopeningbalance %></td>
+        <td><%= Stockist.sbstcode %></td>
+        <td width="70"><a type="button" class="btn btn-info" data-dismiss="modal" href="/products/show/<%= Stockist.id %>">Show</a></td>
+        <td width="70"><a type="button" class="btn btn-warning" data-dismiss="modal" href="/products/edit/<%= Stockist.scode %>">Edit</a></td>
+        <td width="70"><a type="button" class="btn btn-danger" data-dismiss="modal" href="/products/destroy/<%= Stockist.scode%>">Delete</a></td>
+       
+        
+        
+    
+    </tr>
+    
+    <% }) %>
+    
+
+</table>
+
+

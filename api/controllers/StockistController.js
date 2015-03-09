@@ -31,11 +31,11 @@ module.exports = {
     
     
      index: function (req, res, next){
-        stockist.find(function fonudStockist (err, stockist){
+        Stockist.find(function fonudStockist (err, Stockist){
             if(err) return next (err);
            
             res.view({
-            stockist: stockist
+            Stockist: Stockist
             });
         
         });

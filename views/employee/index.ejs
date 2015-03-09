@@ -1,0 +1,39 @@
+<h3>All Employees</h3>
+
+<table>
+    <tr>
+        <th width="200">Employee Code</th>
+        <th width="200">Employee Name</th>
+        <th width="290">Employee Manager</th>
+        <th width="200">Employee Address</th>
+        <th width="150">M   R</th>   
+        <th width="150">Transport</th>   
+        
+        
+
+    </tr>
+    
+    <% _.each(Employee, function(Employee) { %>
+    <tr data-id="<%= Employee.ecode %>" data-model="Employee">
+    
+        <td height="50"><%= Employee.ecode %></td>
+        <td><%= Employee.ename %></td>
+        <td><%= Employee.eaddress %></td>
+        <td><%= Employee.eareamanager %></td>
+        <td><%= Employee.emr %></td>
+        <td><%= Employee.etransport %></td>
+        <td width="70"><a type="button" class="btn btn-info" data-dismiss="modal" href="/products/show/<%= Employee.id %>">Show</a></td>
+        <td width="70"><a type="button" class="btn btn-warning" data-dismiss="modal" href="/products/edit/<%= Employee.id %>">Edit</a></td>
+        <td width="70"><a type="button" class="btn btn-danger" data-dismiss="modal" href="/products/destroy/<%= Employee.id%>">Delete</a></td>
+       
+        
+        
+    
+    </tr>
+    
+    <% }) %>
+    
+
+</table>
+
+
