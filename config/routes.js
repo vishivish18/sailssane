@@ -41,9 +41,9 @@ module.exports.routes = {
     action: 'addproduct'
   },
     
- '/addmanufacturer': {
-    controller: 'ManufacturerController',
-    action: 'addmanufacturer'
+ '/addcompany': {
+    controller: 'CompanyController',
+    action: 'addCompany'
   },
   '/addstockist': {
     controller: 'StockistController',
