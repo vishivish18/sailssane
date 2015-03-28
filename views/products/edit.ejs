@@ -1,5 +1,5 @@
-<form action="/products/update/<%= products.pcode %>" method="POST">
-<h1>You are editing the Product <%= product.pname %> </h1>
+<form action="/products/update/<%= products.id %>" method="POST">
+<h1>You are editing the Product <%= products.pname %> </h1>
     
     <input value="<%= products.pcode %>" name="pcode" type="text" />
     <input value="<%= products.pname %>" name="pname" type="text" />

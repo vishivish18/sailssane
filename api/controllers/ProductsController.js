@@ -54,6 +54,17 @@ module.exports = {
         });
     },
     
+      edit: function (req, res, next){
+        Products.findOne(req.param('id'), function foundUser (err, products){
+            if(err) return next (err);
+            if(!products) return next();
+            res.view({
+            products: products
+            });
+        
+        });
+    },
+    
 
 };
 

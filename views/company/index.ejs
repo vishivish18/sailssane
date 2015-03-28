@@ -1,10 +1,10 @@
-<h3>All Manufacturers</h3>
+<h3>All Company</h3>
 
 <table>
     <tr>
-        <th width="200">Manufacturer Code</th>
-        <th width="200">Manufacturer Name</th>
-        <th width="290">Manufacturer Address</th>
+        <th width="200">Company Code</th>
+        <th width="200">Company Name</th>
+        <th width="290">Company Address</th>
         <th width="200">Opening Balance</th>
         <th width="150">BST CODE</th>   
         
@@ -12,17 +12,17 @@
 
     </tr>
     
-    <% _.each(manufacturer, function(manufacturer) { %>
-    <tr data-id="<%= manufacturer.mcode %>" data-model="manufacturer">
+    <% _.each(Company, function(Company) { %>
+    <tr data-id="<%= Company.mcode %>" data-model="Company">
     
-        <td height="50"><%= manufacturer.mcode %></td>
-        <td><%= manufacturer.mname %></td>
-        <td><%= manufacturer.maddress %></td>
-        <td><%= manufacturer.mopeningbalance %></td>
-        <td><%= manufacturer.mbstcode %></td>
-        <td width="70"><a type="button" class="btn btn-info" data-dismiss="modal" href="/products/show/<%= manufacturer.id %>">Show</a></td>
-        <td width="70"><a type="button" class="btn btn-warning" data-dismiss="modal" href="/products/edit/<%= manufacturer.pcode %>">Edit</a></td>
-        <td width="70"><a type="button" class="btn btn-danger" data-dismiss="modal" href="/products/destroy/<%= manufacturer.pcode%>">Delete</a></td>
+        <td height="50"><%= Company.mcode %></td>
+        <td><%= Company.mname %></td>
+        <td><%= Company.maddress %></td>
+        <td><%= Company.mopeningbalance %></td>
+        <td><%= Company.mbstcode %></td>
+        <td width="70"><a type="button" class="btn btn-info" data-dismiss="modal" href="/products/show/<%= Company.id %>">Show</a></td>
+        <td width="70"><a type="button" class="btn btn-warning" data-dismiss="modal" href="/products/edit/<%= Company.pcode %>">Edit</a></td>
+        <td width="70"><a type="button" class="btn btn-danger" data-dismiss="modal" href="/products/destroy/<%= Company.pcode%>">Delete</a></td>
        
         
         

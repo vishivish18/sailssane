@@ -19,7 +19,7 @@ a:active {color:#fd5725;}  /* selected link */
 /**********************************************************************/
 /*---------------------Styling the menubar starts-----------------------*/
 
-th {text-align:center}
+th {text-align:left}
 
 ul.nav li.dropdown:hover ul.dropdown-menu{
     display: block;

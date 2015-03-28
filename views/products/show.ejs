@@ -1,11 +1,81 @@
-<h1><%= Products.pname %></h1>
-<h3>Product Code :<%= Products.pcode %></h3>
-<a href="/products/edit/<%= products.pcode %>">Edit</a>
-<a href="/logout">Logout</a>
+<h1><%= products.pname %></h1>
+
+<a href="/products/edit/<%= products.id %>">Edit</a>
+
 </br>
 </br>
 
+ <table border="0">
+        <tr>
+            <td height="100" width="350">
+                 <div class="form-group">
+                      <label for="pcode">Product Code:</label>
+                      <%= products.pcode %>
+                 </div>
+            </td>
+            
+            <td>
+                <div class="form-group">
+                      <label for="pname">Product Name:</label>
+                      <%= products.pname %>
+                </div>
+            </td>
+            
+            <td>
+                <div class="form-group">
+                      <label for="ppacking">Packing:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <%= products.ppacking %>
+                </div>  
+            </td>
+        </tr>    
+          </br></br></br></br>
+    
+        
+        <tr>
+    
+            <td height="100" width="350">
+                <div class="form-group">
+                      <label for="pcompany">Company:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <%= products.pcompany %>
+                </div>
+            </td>
+            
+            <td>
+            
+                <div class="form-group">
+                      <label for="psalestax">Sales Tax as :</label>&nbsp;&nbsp;
+                      <%= products.psalestaxas %>
+                </div>
+            </td>
+            
+            <td>
+            
+                <div class="form-group">
+                      <label for="pdiscount">Purchase Discount:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <%= products.ppurchasediscount %>
+                </div>  
+            </td>
+        </tr>
+        </br></br></br></br>
 
-
-
-
+        <tr>
+            <td height="100" width="350">
+                <div class="form-group">
+                  <label for="pboxsize">Box/Case Size:</label>
+                  <%= products.pboxsize %>
+                </div>
+            </td> 
+            <td width="350">
+                <div class="form-group">
+                  <label for="ppurchase">Purchase as :</label>&nbsp;&nbsp;
+                  <%= products.ppurchaseas %>
+                </div>
+            </td>
+            <td>
+                <div class="form-group">
+                  <label for="pmrp">Maximum Retail Price :</label>
+                  <%= products.pmrp %>
+                </div>  
+            </td>
+        </tr>    
+  </table>  
