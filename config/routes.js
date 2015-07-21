@@ -41,6 +41,11 @@ module.exports.routes = {
     action: 'addproduct'
   },
     
+'/recievedata': {
+    controller: 'ArvaaController',
+    action: 'recievedata'
+  },
+    
  '/addcompany': {
     controller: 'CompanyController',
     action: 'addCompany'

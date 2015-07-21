@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+ <style type="text/css">
+      html, body, #googleMap { height: 95%; margin: 0; padding: 0;}
+    </style>
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAN5qloAyePUfH9fr4aMKuXvxu8rS0fZIU">
+</script>
+
+<script>
+var myCenter=new google.maps.LatLng(28.624801,77.437855);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:10,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  icon:'logo.png'
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap"></div>
+<form >
+  Longitute <input type="text" name="long">
+  Latitude  <input type="text" name="lat">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
